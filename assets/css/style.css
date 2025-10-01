@@ -1,0 +1,196 @@
+﻿/* ======================================= General Styles =============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --main-color: #b30000;
+    --text-color: #ffffff;
+    --bg-dark: #000000;
+    --bg-light: #1a1a1a;
+}
+
+/* ================================================== Body=============================================== */
+body {
+    background-color: #000000;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ==================================================Header=============================================== */
+.main-header {
+    background-color: #000;
+    color: var(--text-color);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .main-header:hover {
+        background-color: #111;
+    }
+
+.logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .nav-links a {
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 6px;
+        position: relative;
+        transition: background 0.3s, color 0.3s, transform 0.3s;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+        .nav-links a:hover {
+            background-color: var(--main-color);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--main-color);
+            transition: width 0.3s, left 0.3s;
+        }
+
+        .nav-links a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+
+    .nav-links .btn-login {
+        background-color: transparent;
+        border: 2px solid var(--main-color);
+        padding: 6px 12px;
+        color: var(--main-color);
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+        text-decoration: none;
+    }
+
+        .nav-links .btn-login:hover {
+            background-color: var(--main-color);
+            color: #fff;
+        }
+
+
+
+/*=================================================================================================================================================/**/
+/* ==================================================== About ============================================ */
+
+
+/*=================================================================================================================================================*/
+/* ========================================================== Membership===================================*/
+
+
+
+
+/*================================================================================================================================================*/
+/* ================================================ Classes =============================================== */
+
+
+
+/*=============================================================================================================================================*/
+/* ================================================ Shop =============================================== */
+
+
+/* ================================================ Blogs =============================================== */
+
+
+
+/*=================================================================================================================================================*/
+/* ================================================ Contact =============================================== */
+
+
+
+/*===============================================================================================================================================*/
+/* ================================================ Login =============================================== */
+
+
+/*==============================================================================================================================================*/
+/* ================================================ Register =============================================== */
+
+
+/*====================================================================================================================================================*/
+/* ================================================ Footer =============================================== */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #000000;
+    color: #aaa;
+    border-top: 2px solid var(--main-color);
+
+}
+
+/* ================================================= Responsive ========================================= */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .programs-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .program-card {
+        width: 90%;
+    }
+}
+
