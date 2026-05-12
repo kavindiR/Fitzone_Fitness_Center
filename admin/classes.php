@@ -1,7 +1,7 @@
 <?php
 // admin/classes.php
 session_start();
-require_once '../db_connect.php';
+require_once __DIR__ . '/../includes/db_connect.php';
 
 // Check admin authentication
 if (!isset($_SESSION['logged_in']) || $_SESSION['role'] !== 'admin') {

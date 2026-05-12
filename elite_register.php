@@ -1,5 +1,5 @@
 ﻿<?php
-include 'db_connect.php';
+include __DIR__ . '/includes/db_connect.php';
 
 $errors = [];
 $success = false;

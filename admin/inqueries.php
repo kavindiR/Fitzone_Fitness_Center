@@ -13,7 +13,7 @@ if ($_SESSION['role'] !== 'admin') {
     exit();
 }
 
-require_once __DIR__ . '/../db_connect.php';
+require_once __DIR__ . '/../includes/db_connect.php';
 
 // Handle reply submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reply'])) {

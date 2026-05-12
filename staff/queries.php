@@ -13,7 +13,7 @@ if ($_SESSION['role'] !== 'trainer') {
     exit();
 }
 
-require_once __DIR__ . '/../db_connect.php';
+require_once __DIR__ . '/../includes/db_connect.php';
 
 // Sample trainer data
 $trainerData = [

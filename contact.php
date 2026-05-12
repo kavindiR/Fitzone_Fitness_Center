@@ -1,7 +1,7 @@
 ﻿<?php
 // Start session and include database connection
 session_start();
-require_once __DIR__ . '/db_connect.php';
+require_once __DIR__ . '/includes/db_connect.php';
 
 $pageTitle = "Contact - FitZone";
 

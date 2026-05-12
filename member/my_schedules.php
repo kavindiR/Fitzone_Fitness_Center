@@ -14,7 +14,7 @@ if ($_SESSION['role'] !== 'member') {
 }
 
 // Database connection
-require_once('../db_connect.php');
+require_once __DIR__ . '/../includes/db_connect.php';
 
 // Fetch member's registered classes
 $member_id = $_SESSION['user_id'];

@@ -14,7 +14,7 @@ if ($_SESSION['role'] !== 'member') {
 }
 
 // Database connection - make sure this is using mysqli (not PDO)
-require_once('../db_connect.php'); // Ensure this file creates a mysqli connection ($conn)
+require_once __DIR__ . '/../includes/db_connect.php'; // Ensure this file creates a mysqli connection ($conn)
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
