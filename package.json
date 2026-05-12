@@ -1,8 +1,0 @@
-{
-  "name": "fitzone-fitness-center",
-  "private": true,
-  "description": "PHP app; vercel-php provides the Vercel serverless runtime",
-  "dependencies": {
-    "vercel-php": "0.9.0"
-  }
-}
