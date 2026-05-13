@@ -1,0 +1,16 @@
+# Apache (XAMPP): run the site through http://localhost/... not file://
+DirectoryIndex index.php
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block direct HTTP access to includes/ (db_connect, etc.)
+    RewriteRule ^includes/ - [F,L]
+
+    # Extensionless URLs only when the matching .php file exists (avoids /member -> member.php)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)$ $1.php [L,QSA]
+</IfModule>
